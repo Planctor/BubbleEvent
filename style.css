@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body{
+    background: linear-gradient(to right,#CD5C5C, #F08080);
+    font-family: 'poppins', sans-serif;
+}
+
+.grupo{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.botao{
+    font-size: bold;
+    background-color: #802D2D;
+    color: white;
+    border: none;
+    box-sizing: border-box;
+    width: 50rem;
+    height: 10rem;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 5em;
+    letter-spacing: 1rem;
+    cursor: pointer;
+    box-shadow: 10px 10px 2px black, -10px 10px 2px black;
+    animation: transicao .3s forwards;
+}
+
+.checado{
+    display: none;
+}
+
+.checado.ativo{
+    display: block;
+}
+
+.label-botao{
+    color: white;
+    background-color: #963C2D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    background-color: #ad4b4b;
+    width: 50rem;
+    height: 5rem;
+    border-radius: 20px;
+    margin-top: 1px;
+}
+
+.label-botao p{
+    box-shadow: rgb(255, 255, 255) 0 2px 0em;
+}
+
+
+
+@keyframes transicao {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -100px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
